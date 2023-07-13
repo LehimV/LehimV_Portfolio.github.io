@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!--Iconos-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./js/app.js" type="module" defer></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Portfolio-MLVL</title>
+  </head>
+  <body>
+    <!----- NAVBAR ---->
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-fluid bd-gutter bg-body-tertiary shadow-sm py-2">
+        <div>
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="40"
+              height="32"
+              x="0px"
+              y="0px"
+              viewBox="0 0 600 500"
+              style="enable-background: new 0 0 600 500"
+              xml:space="preserve"
+              role="img"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: #e65300;
+                }
+              </style>
+              <g id="Capa_2">
+                <g>
+                  <path
+                    class="st0"
+                    d="M24.14,82.3l194.53,335.4h104.81c0,0,7.96-98.94,83.01-171.05V130.24c0,0-101.04,66.1-134.16,192.71L133.98,82.3H24.14z"
+                  />
+                  <path
+                    class="st0"
+                    d="M496.21,82.3v240.65h79.65v94.75H424.93V117.26C424.93,117.26,464.76,92.23,496.21,82.3z"
+                  />
+                  <polygon class="st0" points="95.41,417.7 24.14,417.7 24.14,117.26 95.41,246.65" />
+                </g>
+              </g>
+            </svg>
+            <span class="fs-4 fw-bold ms-lg-2 ms-sm-0">Lehim Vergara</span>
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resume | C.V.
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="btn dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#webDeveloper"
+                  >
+                    Web Developer</a
+                  >
+                </li>
+                <li>
+                  <a class="btn dropdown-item" data-bs-toggle="modal" data-bs-target="#designer"
+                    >Graphic Designer</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="dropdown-header">More...</li>
+                <li class="d-flex align-items-center">
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="https://www.linkedin.com/in/lehim-vergara/"
+                    target="_blank"
+                    >LinkedIn <span class="material-symbols-outlined"> arrow_outward </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center"
+                    href="https://www.behance.net/lehimvergara"
+                    target="_blank"
+                    >Behance <span class="material-symbols-outlined"> arrow_outward </span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div id="DarkMode">
+            <button id="btn-darkMode" class="btn">
+              <span class="material-symbols-outlined align-middle"> dark_mode </span>
+              Dark Mode
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!----- RESUME MODAL ---->
+
+    <!-- Modal webDeveloper -->
+    <div class="modal fade" id="webDeveloper" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"><img src="./img/resume/GraphicDesign.png" alt="" /></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Graphic Designer -->
+    <div class="modal fade" id="designer" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Graphic Designer-Resume</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <img class="img-fluid" src="./img/resume/GraphicDesign.png" alt="" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----- CARDS ---->
+    <div class="container-sm">
+      <div class="row row-cols-1 row-cols-md-2 g-5 mt-4">
+        <!--FIRST CARD -->
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4">
+              <img
+                class="imgCheese"
+                src="/img/screens/1Cheesecake.png"
+                alt="cheesecake page example"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Classic Cheesecake Recipe</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://lehimv.github.io/MiniProyecto1-MLVL_CheesecakeRecipe.github.io/"
+                        target="_blank"
+                        >GitHub Pages
+                      </a>
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://github.com/LehimV/MiniProyecto1-MLVL_CheesecakeRecipe.github.io.git"
+                        target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img src="https://skillicons.dev/icons?i=html,css" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--SECOND CARD -->
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4">
+              <img
+                class="imgCheese"
+                src="/img/screens//2Sunnyside.png"
+                alt="cheesecake page example"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sunnyside</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://lehimv.github.io/ProyectoFinal1_MLVL_Sunnyside.github.io/"
+                        target="_blank"
+                        >GitHub Pages
+                      </a>
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://github.com/LehimV/ProyectoFinal1_MLVL_Sunnyside.github.io.git"
+                        target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img src="https://skillicons.dev/icons?i=html,css" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--THIRD CARD -->
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4">
+              <img class="imgCheese" src="/img/screens/3Where.png" alt="cheesecake page example" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Where in the world?</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://lehimv.github.io/ProyectoFinal2_MLVL_Where.github.io/"
+                        target="_blank"
+                        >GitHub Pages
+                      </a>
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://github.com/LehimV/ProyectoFinal2_MLVL_Where.github.io"
+                        target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img
+                        src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--FOURTH CARD -->
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4">
+              <img
+                class="imgCheese"
+                src="/img/screens/4Weather.png"
+                alt="cheesecake page example"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Weather App</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://lehimv.github.io/Final3-MLVL/"
+                        target="_blank"
+                        >GitHub Pages
+                      </a>
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://github.com/LehimV/Final3-MLVL.git"
+                        target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img
+                        src="https://skillicons.dev/icons?i=html,css,js,react,vite,tailwind"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--FIFTH CARD -->
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4">
+              <img class="imgCheese" src="/img/screens/5School.png" alt="cheesecake page example" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">School management</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://youtu.be/LnVH9V57f1E"
+                        target="_blank"
+                        >View on Youtube
+                      </a>
+                      <a
+                        class="btn btn-outline-light fw-bold"
+                        href="https://github.com/LehimV/MiniProyecto_5.git"
+                        target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img
+                        src="https://skillicons.dev/icons?i=html,css,js,laravel,mysql,vite,bootstrap,ai"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--SIXTH CARD -->
+
+        <div class="col">
+          <div class="card bg-body-tertiary border border-ligh-subtle shadow-sm">
+            <div class="imgBox rounded-4 d-flex justify-content-center">
+              <img
+                class="imgCheese"
+                src="/img/coming soon.svg"
+                style="width: 30rem"
+                alt="cheesecake page example"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">e-commerce/shop...</h5>
+
+              <hr />
+
+              <div class="card-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <a class="btn btn-outline-light fw-bold" target="_blank">View </a>
+                      <a class="btn btn-outline-light fw-bold" target="_blank"
+                        >GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 card-footer">
+                    <div class="col">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-5">hola</footer>
+    <footer>
+      <b>ProyectoFinal1 / M. Lehim Vergara L. / FUNVAL 2023</b>
+    </footer>
+  </body>
+</html>

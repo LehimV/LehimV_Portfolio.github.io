@@ -1,0 +1,36 @@
+:root {
+  --naranja: #e65300;
+  --lightnaranja: #ff9a5f;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.imgBox {
+  transition: 1s;
+}
+
+.imgCheese {
+  border: 10px;
+  border-radius: 5px;
+}
+
+.imgBox img {
+  display: block;
+  width: 100%;
+}
+
+.imgBox:hover {
+  transform: scale(1.04);
+  z-index: 2;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light {
+  --bs-btn-bg: var(--naranja);
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-color: var(--naranja);
+  --bs-btn-active-color: var(--lightnaranja);
+}
