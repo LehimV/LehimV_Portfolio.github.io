@@ -27,7 +27,8 @@
   box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-.btn-outline-light {
+.btn-outline-light,
+.btn-secondary {
   --bs-btn-bg: var(--naranja);
   --bs-btn-border-color: none;
   --bs-btn-hover-bg: #ffffff;
